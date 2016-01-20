@@ -1,0 +1,80 @@
+[
+
+    /* disabled hotkeys */
+    { "keys": ["super+w"], "command": "empty" },
+    { "keys": ["super+d","super+s"], "command": "empty" },
+
+	/* close */
+    { "keys": ["super+w", "super+w"], "command": "close" },
+
+    /* delete to the line end */
+    { "keys": ["super+d", "super+l"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to EOL.sublime-macro"} },
+
+    /* delete to the line begin and indent*/
+    { "keys": ["super+d", "super+j"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete to BOL.sublime-macro"} },
+
+	/* delete the line and indent */
+	{ "keys": ["super+d", "super+k"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Line and Indent.sublime-macro"} },
+	
+	/* delete the word */
+	{ "keys": ["super+d", "super+w"], "command": "run_macro_file", "args": {"file": "Packages/Default/Delete Word.sublime-macro"} },
+
+	{ "keys": ["super+shift+up"], "command": "swap_line_up" },
+	{ "keys": ["super+shift+down"], "command": "swap_line_down" },
+
+	/* control cursor */
+	{ "keys": ["super+i"], "command": "move", "args": {"by": "lines", "forward": false}},
+	{ "keys": ["super+m"], "command": "move", "args": {"by": "lines", "forward": true}},
+	
+	{ "keys": ["alt+j"], "command": "move", "args": {"by": "characters", "forward": false}},
+	{ "keys": ["alt+l"], "command": "move", "args": {"by": "characters", "forward": true}},
+
+	/* move to before words */
+	{ "keys": ["super+j"], "command": "move", "args": {"by": "words", "forward": false}},
+
+	/* move to after words */
+	{ "keys": ["super+l"], "command": "move", "args": {"by": "words", "forward": true}},
+
+	/* move to line begin */
+	{ "keys": ["super+shift+i"], "command": "move_to", "args": {"to": "bol"} },
+	
+	/* move to line end */
+	{ "keys": ["super+shift+m"], "command": "move_to", "args": {"to": "eol"} },
+	
+	/* select words */
+	{ "keys": ["super+k", "super+k"], "command": "expand_selection", "args": {"to": "word"} },
+
+	/* select scope */
+	{ "keys": ["super+k", "super+j"], "command": "expand_selection_to_quotes" },
+
+	/* select brackets */
+	{ "keys": ["super+k", "super+l"], "command": "expand_selection", "args": {"to": "brackets"} },
+
+	{ "keys": ["super+shift+c"], "command": "duplicate_line" },
+
+	{ "keys": ["super+k", "super+a"], "command": "alignment" },
+
+	{ "keys": ["super+i", "super+d"], "command": "insert_date" },
+
+	
+	/* 跳过引号添加逗号和个空格 */
+	{ "keys": ["alt+,"], "command": "run_macro_file", "args": {"file": "Packages/User/Add comma out of qoute.sublime-macro"} },
+
+	/* 在行尾添加分号 */
+	{ "keys": ["alt+;"], "command": "run_macro_file", "args": {"file": "Packages/User/Add semicolon end line.sublime-macro"} },
+
+	{ "keys": ["super+n", "super+p"], "command": "insert_snippet", "args": {"name": "Packages/User/php-header.sublime-snippet"} },
+
+	/* jump for last edit point */
+	{
+        "keys": ["alt+b"], "command": "last_edit" 
+    },
+    {
+        "keys": ["super+["],"command":"switch_edit_view",
+        "args":{"way":"left"}
+    },
+    {
+        "keys": ["super+]"],"command":"switch_edit_view",
+        "args":{"way":"right"}
+    }
+]

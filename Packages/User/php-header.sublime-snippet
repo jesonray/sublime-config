@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+<?php
+/** 
+ * ${1:文件说明}
+ * 
+ * @author      jesonray<jesonray@163.com> 
+ * @version     ${2:版本号} 
+ * @date        ${3:时间} 
+ */
+
+${4}
+]]></content>
+	<tabTrigger>php5</tabTrigger>
+	<scopeName>language_construct</scopeName>
+	<scope>source.php</scope>
+	<description>Init php header</description>
+</snippet>

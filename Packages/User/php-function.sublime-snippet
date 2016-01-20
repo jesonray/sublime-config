@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+function ${1:func}(${2})
+{
+	${3}
+}
+]]></content>
+	<tabTrigger>function</tabTrigger>
+	<scopeName>language_construct</scopeName>
+	<scope>source.php</scope>
+	<description>php function</description>
+</snippet>

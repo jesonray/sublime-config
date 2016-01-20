@@ -1,0 +1,8 @@
+[
+    {"command": "expand_selection", "args": {"to": "line"}},
+    {"command": "add_to_kill_ring", "args": {"forward": true}},
+    {"command": "left_delete"},
+    {"command": "insert", "args": {"characters": "\n"}},
+    {"command": "move", "args": {"by": "lines", "forward": false}},
+    {"command": "reindent", "args": {"force_indent": false}}
+]
